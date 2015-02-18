@@ -1,6 +1,6 @@
 #!/bin/bash
 #USAGE: removehost.sh epicavm1 0677
-#Created by Naveen
+#Created by Naveen Marri
 if [ $# -ne 2 ]
 then
 echo "USAGE: $0 hostname array"
