@@ -1,6 +1,6 @@
 #!/bin/bash
 #USAGE: removehost.sh epicavm1 0677
-#Created by Naveen
+#Created by Naveen Marri.
 if [ $# -ne 2 ]
 then
 echo "USAGE: $0 hostname array"
@@ -37,11 +37,9 @@ echo "symconfigure -sid $storarray -cmd \"unbind tdev $strdev from pool $strpool
 echo "symconfigure -sid $storarray -cmd \"delete dev $strdev;\" preview -nop"
 echo "symconfigure -sid $storarray -cmd \"delete dev $strdev;\" commit -nop"
 
-
 echo
 echo "Run the following on the appropriate switch"
 echo "show zone active vsan 600 |grep $hostname1"
 echo "show zone active vsan 601 |grep $hostname1"
-
 
 exit 0
